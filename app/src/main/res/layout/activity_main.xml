@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:textSize="40sp"
+            android:text="Your Data"/>
+        <Button
+            android:background="@drawable/ic_baseline_add"
+            android:id="@+id/addDataMainActivity"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:scaleType="centerInside"
+            android:layout_height="match_parent" />
+        <Button
+            android:background="@drawable/ic_baseline_insights_24"
+            android:layout_margin="5dp"
+            android:id="@+id/showChartMainActivity"
+            android:layout_weight="1.5"
+            android:layout_width="0dp"
+            android:scaleType="centerInside"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp">
+        <ListView
+            android:id="@+id/detailsListMainActivity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+</LinearLayout>
